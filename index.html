@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javascript.js" defer></script>
+    <title>Project Library</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Library</h1>
+            <p>Having trouble keeping all your books in order? Let us help.</p>
+        </header>
+
+        <main>
+            <div class="formWrapper">
+                <form class="bookSubmitForm" action="">
+                    <div class="formInputRow">
+                        <div class="formField">
+                            <label for="bookTitle">Title</label>
+                            <input id="bookTitle" name="bookTitle" type="text" required>
+                        </div>
+
+                        <div class="formField">
+                            <label for="bookAuthor">Author</label>
+                            <input id="bookAuthor" name="bookAuthor" type="text" required>
+                        </div>
+
+                        <div class="formField">
+                            <label for="bookPages">Pages</label>
+                            <input id="bookPages" name="bookPages" type="number" required>
+                        </div>
+
+                        <div class="formField">
+                            <label for="bookRead">Status</label>
+                            <select id="bookRead" name="bookRead">
+                                <option value="Read">Read</option>
+                                <option value="Not Read" selected>Not Read</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="formSubmitRow">
+                        <input id="bookSubmit" type="submit">
+                        <div class="bookStats">
+                            <div class="bookStatsField">
+                                <h4>Total Books</h4>
+                                <p class="totalBooks">0</p>
+                            </div>
+
+                            <div class="bookStatsField">
+                                <h4>Finished</h4>
+                                <p class="booksRead">0</p>
+                            </div>
+
+                            <div class="bookStatsField">
+                                <h4>To Read</h4>
+                                <p class="booksToRead">0</p>
+                            </div>
+
+                            <div class="bookStatsField">
+                                <h4>Total Pages</h4>
+                                <p class="totalPages">0</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <table>
+                <tr class="tableHeader">
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+
+            <div class="tableWrapper">
+                
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
