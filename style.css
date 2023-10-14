@@ -55,6 +55,14 @@ header {
     flex:1;
 }
 
+.formField > input {
+    font-size: 1.5em;
+}
+
+.formField > select {
+    font-size: 1.5em;
+}
+
 .formField > input:focus {
     outline: 2px solid #f95959;
 }
@@ -206,6 +214,14 @@ button {
     
     .formInputRow{
         gap: 0.25em;
+    }
+
+    .formField > input {
+        font-size: 1.1em;
+    }
+    
+    .formField > select {
+        font-size: 1.1em;
     }
     
     .formSubmitRow {
